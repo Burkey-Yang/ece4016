@@ -10,6 +10,8 @@ def student_entrypoint(Measured_Bandwidth, Previous_Throughput, Buffer_Occupancy
     R_i = list(Available_Bitrates.items())
     R_i.sort(key=lambda tup: tup[1] , reverse=True)
     bitrate = bufferbased(rate_prev=bitrate, buf_now= Buffer_Occupancy, r=Chunk['time']+1,R_i= R_i ) 
+    print(Available_Bitrates)
+    print(Chunk)
     return bitrate
 
 #helper function, to find the corresponding size of previous bitrate
@@ -89,5 +91,4 @@ def bufferbased(rate_prev, buf_now, r, R_i , cu = 126):
             rate_next = match(rate_next, R_i)[0]
     else:
         rate_next = rate_prev[0] #else give up and try again next time
-
     return rate_next
