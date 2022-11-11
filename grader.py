@@ -11,7 +11,7 @@ import sys
 
 
 def run_student_code():
-    subprocess.run(['python', 'studentComm.py'])
+    subprocess.run(['python3', 'studentComm.py'])
     return
 
 
@@ -49,7 +49,7 @@ if __name__ == "__main__":
         time.sleep(1)
 
         #run simulator process
-        output = subprocess.run(['python', 'simulator.py', tracepath, manifestpath, verboseflag], capture_output=True )
+        output = subprocess.run(['python3', 'simulator.py', tracepath, manifestpath, verboseflag], capture_output=True )
         print(output)
 
         student_thread.join()
