@@ -1,24 +1,30 @@
-testALThard: 
+testALTsoft: 
+Results:Average bitrate:4866666.666666667buffer time:14.106switches:2
+Score:1997912.352281745
 
-Unexpected output from the simulator
 
 testHD: 
+Results:Average bitrate:5000000.0buffer time:0.907switches:0
+Score:4772712.943233574
 
-Unexpected output from the simulator
-
-testPQ: 
-
-Unexpected output from the simulator
-
-badtest: 
-
-Unexpected output from the simulator
-
-testALTsoft: 
-
-Unexpected output from the simulator
 
 testHDmanPQtrace: 
+Results:Average bitrate:500000.0buffer time:91.115switches:0
+Score:4669.348620686024
 
-Unexpected output from the simulator
+
+testALThard: 
+Results:Average bitrate:5000000.0buffer time:86.27199999999999switches:0
+Score:59860.57439470865
+
+
+badtest: 
+Your trace file is poorly formed!Results:Average bitrate:5000000.0buffer time:86.27199999999999switches:0
+Score:59860.57439470865
+
+
+testPQ: 
+Results:Average bitrate:500000.0buffer time:91.115switches:0
+Score:4669.348620686024
+
 
